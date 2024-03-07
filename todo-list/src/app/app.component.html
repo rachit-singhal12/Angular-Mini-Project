@@ -1,0 +1,24 @@
+<div>
+  
+<h1>{{title | uppercase}}</h1>
+
+<input type="text" #box placeholder="Enter the task"/>
+
+<button (click)="addTask(box.value)">Add Task</button>
+
+<h1>Task to do</h1>
+<table [cellPadding]="20" [cellPadding]="20">
+  <thead>
+    <tr>
+      <th>Task Name</th>
+      <th>Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of task">
+      <td>{{item.name | titlecase}}</td>
+      <td><button (click)="removeTask(item.id)">Remove</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

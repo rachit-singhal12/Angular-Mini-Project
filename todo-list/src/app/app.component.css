@@ -1,0 +1,37 @@
+/* Inline CSS styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Example of applying styles to specific elements */
+  h1 {
+    color: blue;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Example of applying styles to specific classes */
+  .task-input {
+    margin-bottom: 10px;
+  }
+  
+  .remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
