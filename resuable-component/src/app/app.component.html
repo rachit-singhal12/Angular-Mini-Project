@@ -1,0 +1,8 @@
+
+<app-parent-to-child [item]="parentToChild"></app-parent-to-child>
+<app-child-to-parent (getUpdatedData)="childToParentGetData($event)"></app-child-to-parent>
+<h1>{{title | titlecase}}</h1>
+
+<ul class="cart" *ngFor="let user of userDetails">
+      <app-user-details [item]="user"></app-user-details>
+</ul>
