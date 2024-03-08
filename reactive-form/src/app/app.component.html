@@ -1,0 +1,7 @@
+<h1>{{title | uppercase}}</h1>
+
+<form [formGroup]="formData" (ngSubmit)="loginData()">
+  <input type="text" placeholder="Username" name="username" formControlName="username"/><br>
+  <input type="text" placeholder="password" name="password" formControlName="password"/><br>
+  <button>Click me</button>
+</form>
