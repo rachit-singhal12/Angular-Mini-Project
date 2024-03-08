@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<form #boxForm="ngForm" (ngSubmit)="getData(boxForm.value)">
+  <label>
+    UserName:
+  </label>
+  <input type="text" name="username" placeholder="Enter your username" ngModel/><br>
+  <label>
+    Password:
+  </label>
+  <input type="password" name="password" placeholder="Enter your password" ngModel/><br>
+  <button>Submit</button>
+</form>
+
+<button (click)="getData(boxForm.value)">Click me</button>
