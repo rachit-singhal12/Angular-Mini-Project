@@ -1,7 +1,11 @@
 <h1>{{title | uppercase}}</h1>
 
 <form [formGroup]="formData" (ngSubmit)="loginData()">
-  <input type="text" placeholder="Username" name="username" formControlName="username"/><br>
-  <input type="text" placeholder="password" name="password" formControlName="password"/><br>
-  <button>Click me</button>
+  <input type="text" placeholder="Username" name="username" formControlName="username" /><br>
+  <span style="color : red;font-size: 12px;" *ngIf="username && username.invalid && username.touched">This Field is
+    required</span><br>
+  <input type="text" placeholder="password" name="password" formControlName="password" /><br>
+  <span style="color : red;font-size: 12px;" *ngIf="password && password.invalid && password.touched">This Field is
+    required</span><br>
+  <button [disabled]="formData.invalid">Click me</button>
 </form>
