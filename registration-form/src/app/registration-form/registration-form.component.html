@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Registration Form</h1>
+    <form [formGroup]="getUserData" (ngSubmit)="submitUserData()">
+      <label>Username</label>
+      <input type="text" name="username" formControlName="username" required>
+      
+      <label >Email</label>
+      <input type="email" name="email" formControlName="email" required>
+      
+      <label>Salary</label>
+      <input type="text" name="salary" formControlName="salary" required>
+      
+      <button>Register</button>
+    </form>
+</div>
+<app-registration-data [item]="userDetails"></app-registration-data>

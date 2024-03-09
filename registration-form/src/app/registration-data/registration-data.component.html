@@ -1,0 +1,22 @@
+<div class="container">
+    <div *ngIf="this.item.length">
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let items of item">
+                <td>{{items.id}}</td>
+                <td>{{items.username}}</td>
+                <td>{{items.email}}</td>
+                <td>{{items.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+header {
+    background-color: #007bff;
+    padding: 10px;
+    width : 98.85%;
+    height: 60px;
+}
+
+header img {
+    float: left;
+    padding : 8px;
+}
+
+header nav {
+    float: right;
+    margin-top: 25px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size : 20px;
+    transition: 0.4s ease-in-out;
+    padding: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+}
