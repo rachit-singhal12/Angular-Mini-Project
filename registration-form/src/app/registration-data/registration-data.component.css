@@ -14,3 +14,17 @@ table {
   .container{
     margin-bottom: 100px;;
   }
+  .btn {
+    background-color: lightblue;
+    font-weight: bold; /* Changed from 2px to bold for font weight */
+    padding: 8px 16px; /* Increased padding for better click area */
+    border-radius: 4px; /* Added border radius for rounded corners */
+    display: inline-block; /* Ensures the button takes only the necessary width */
+    text-decoration: none; /* Added to remove underline */
+    color : black;
+  }
+  
+  .btn:hover {
+    background-color: lightcyan;
+  }
+  

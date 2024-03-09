@@ -7,6 +7,7 @@
                 <th>Username</th>
                 <th>Email</th>
                 <th>Salary</th>
+                <th>Operations</th>
             </tr>
         </thead>
         <tbody>
@@ -16,7 +17,7 @@
                 <td>{{items.email}}</td>
                 <td>{{items.salary}}</td>
                 
-                <td><a [routerLink]="'/user/' + items.id">Update</a></td>
+                <td><a class="btn" [routerLink]="'/user/' + items.id">UPDATE</a></td>
             </tr>
         </tbody>
     </table>

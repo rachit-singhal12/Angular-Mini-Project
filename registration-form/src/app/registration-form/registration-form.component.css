@@ -42,3 +42,7 @@
   input[type="submit"]:hover {
     background-color: #0056b3;
   }
+  span{
+    color : red;
+    font-size : 10px
+  }

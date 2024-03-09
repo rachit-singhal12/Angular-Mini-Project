@@ -3,12 +3,14 @@
     <form [formGroup]="getUserData" (ngSubmit)="submitUserData()">
       <label>Username</label>
       <input type="text" name="username" formControlName="username" required>
-      
+      <span *ngIf="username && username.invalid">This field is required</span><br>
       <label >Email</label>
       <input type="email" name="email" formControlName="email" required>
+      <span *ngIf="email && email.invalid">This field is required and email must be valid</span><br>
       
       <label>Salary</label>
       <input type="text" name="salary" formControlName="salary" required>
+      <span *ngIf="salary && salary.invalid">This field is required</span><br>
       
       <button>Register</button>
     </form>
