@@ -6,11 +6,18 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { ContactComponent } from './contact/contact.component';
 import { UserComponent } from './user/user.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { OverviewComponent } from './overview/overview.component';
 
 const routes: Routes = [
   {
     path:'',
-    component: HomeComponent
+    component: HomeComponent,
+    children:[
+      {
+        path:'overview',
+        component: OverviewComponent
+      }
+    ]
   },
   {
     path:'about',

@@ -12,7 +12,8 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 import { RegistrationDataComponent } from './registration-data/registration-data.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserComponent } from './user/user.component';
-import { ErrorPageComponent } from './error-page/error-page.component'
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { OverviewComponent } from './overview/overview.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ErrorPageComponent } from './error-page/error-page.component'
     RegistrationFormComponent,
     RegistrationDataComponent,
     UserComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,

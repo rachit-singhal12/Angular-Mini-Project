@@ -1,0 +1,24 @@
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-details {
+    text-align: justify;
+    background-color: #f9f9f9;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .user-details p {
+    line-height: 1.6;
+  }
+  
