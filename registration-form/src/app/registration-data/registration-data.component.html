@@ -15,6 +15,8 @@
                 <td>{{items.username}}</td>
                 <td>{{items.email}}</td>
                 <td>{{items.salary}}</td>
+                
+                <td><a [routerLink]="'/user/' + items.id">Update</a></td>
             </tr>
         </tbody>
     </table>

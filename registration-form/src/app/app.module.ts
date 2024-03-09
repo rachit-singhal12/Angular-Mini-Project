@@ -10,7 +10,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { RegistrationDataComponent } from './registration-data/registration-data.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserComponent } from './user/user.component';
+import { ErrorPageComponent } from './error-page/error-page.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms'
     AboutComponent,
     ContactComponent,
     RegistrationFormComponent,
-    RegistrationDataComponent
+    RegistrationDataComponent,
+    UserComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,

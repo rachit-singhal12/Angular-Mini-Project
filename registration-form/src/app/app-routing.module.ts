@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { ContactComponent } from './contact/contact.component';
+import { UserComponent } from './user/user.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
     path:'contact',
     component: ContactComponent
   },
+  {
+    path: 'user/:id',
+    component : UserComponent
+  },
+  {
+    path:'**',
+    component:ErrorPageComponent
+  }
 ];
 
 @NgModule({
