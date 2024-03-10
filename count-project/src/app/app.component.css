@@ -1,0 +1,38 @@
+/* Styles for headings */
+h1 {
+    text-align: center;
+  }
+  
+  /* Styles for buttons */
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Styles for increase button */
+  .increase {
+    background-color: #3498db; /* Blue */
+    color: white;
+  }
+  
+  /* Hover effect for increase button */
+  .increase:hover {
+    background-color: #2980b9; /* Darker blue */
+  }
+  
+  /* Styles for decrease button */
+  .decrease {
+    background-color: #e74c3c; /* Red */
+    color: white;
+  }
+  
+  /* Hover effect for decrease button */
+  .decrease:hover {
+    background-color: #c0392b; /* Darker red */
+  }
+  
