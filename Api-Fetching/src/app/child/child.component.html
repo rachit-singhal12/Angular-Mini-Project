@@ -1,0 +1,25 @@
+<p>child works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>Userid</th>
+            <th>id</th>
+            <th>title</th>
+            <th>body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  }, -->
+        <tr *ngFor="let item of posts">
+            <td>{{item.userId}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.body}}</td>
+        </tr>
+    </tbody>
+</table>
+<p>{{posts}}</p>
