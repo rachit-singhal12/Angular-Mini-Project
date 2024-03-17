@@ -1,0 +1,30 @@
+
+/* Styling header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    overflow: hidden; /* Clearfix */
+}
+
+/* Styling logo */
+.logo {
+    float: left;
+    max-width: 100px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+nav {
+    float: right;
+    padding-top : 25px;
+   
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right : 50px;
+    margin-left: 10px; /* Adjust spacing between navigation links */
+    padding : 10px;
+}
+

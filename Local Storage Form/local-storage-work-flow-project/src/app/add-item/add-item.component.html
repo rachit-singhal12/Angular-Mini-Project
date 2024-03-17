@@ -1,0 +1,39 @@
+<div>
+    <h1>Registration Form</h1>
+    <form #boxform="ngForm" (ngSubmit)="boxform.valid && getUserData(boxform.value)">
+        <label for="name">Name</label>
+        <input type="text" name="name" required [(ngModel)]="user.name" placeholder="Enter your name" #name="ngModel" pattern="[a-zA-Z]+">
+
+        <div style="margin : 0px" *ngIf="name.errors && name.touched">
+            <small style="color : red" *ngIf="name.errors['required']">Name is required</small>
+            <small style="color : red" *ngIf="name.errors['pattern']">Enter a valid name</small>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" [(ngModel)]="user.email" required placeholder="Enter your Email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+        <div style="margin : 0px" *ngIf="email.errors && email.touched">
+            <small style="color : red" *ngIf="email.errors['required']">email is required</small>
+            <small style="color : red" *ngIf="email.errors['pattern']">Enter a valid email</small>
+        </div>
+
+        <label for="gender">Gender</label>
+        <select name="gender" [(ngModel)]="user.gender" required #gender="ngModel">
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <div style="margin : 0px" *ngIf="gender.errors && gender.touched">
+            <small style="color : red" *ngIf="gender.errors['required']">gender is required</small>
+        </div>
+
+        <label for="password">Password</label>
+        <input type="password" [(ngModel)]="user.password" name="password" #password="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your Password" required>
+        <div style="margin : 0px" *ngIf="password.errors && password.touched">
+            <small style="color : red" *ngIf="password.errors['required']">password is required</small>
+            <small style="color : red" *ngIf="password.errors['pattern']">Enter a valid password</small>
+        </div>
+
+        <input type="submit" value="Submit" [disabled]="boxform.invalid">
+    </form>
+</div>

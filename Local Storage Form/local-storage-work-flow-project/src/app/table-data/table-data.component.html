@@ -1,0 +1,39 @@
+<div *ngIf="userlist.length else elsetemplate">
+<h1 style="padding-top: 50px;padding-bottom: 50px;">Student Table Data</h1>
+<div style="padding-bottom: 200px;">
+<table class="student-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Password</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userlist">
+            <td>{{ item.name }}</td> 
+            <td>{{ item.email }}</td> 
+            <td>{{ item.gender }}</td> 
+            <td>{{ item.password }}</td>  
+            <td><a [routerLink]="['/additem', item.email]" class="button">Update</a></td>
+            <td><button class="button" (click)="deleteData(item)">Delete</button></td>
+          </tr>
+          <tr>
+            <td colspan="6">
+                <button class="button" (click)="clearAllData()">Clear All</button>
+            </td>
+          </tr> 
+    </tbody>
+</table>
+
+</div>
+</div>
+<ng-template #elsetemplate>
+    <div class="elsecase">
+        <h1>Local Storage is empty</h1>
+        <h3>Nothing to display..</h3>
+    </div>
+</ng-template>
