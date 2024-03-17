@@ -1,0 +1,8 @@
+<p>home works!</p>
+<form #boxform="ngForm" (submit)="getData(boxform.value)">
+    <label for="name">Name</label>
+    <input type="text" ngModel name="name" placeholder="Enter your name" title="Enter name"/>
+    <label for=""></label>
+    <input type="password" name="password" ngModel placeholder="Enter your password" title="Enter password"/>
+    <input type="submit">
+</form>
